@@ -66,6 +66,25 @@ let christmasOffers = {
             savingText: "Save 33% compared to newsstand",
             url: "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CLI&prom=MMMXS20D"
         }
-    }
+    },
 
+    "derbyshire": {
+        id: "der",
+        name: "Derbyshire Life",
+        digital: {
+            pricePointText: "£40 for 12 months",
+            savingText: "Save 20% compared to newsstand",
+            url: "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=DL1&prom=MMMXS20F"
+        },
+        printAndDigital: {
+            pricePointText: "£41 for 12 months",
+            savingText: "Save 21% compared to newsstand",
+            url: "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=DL1DI1&prom=MMMXS20F"
+        },
+        print: {
+            pricePointText: "£42 for 12 months",
+            savingText: "Save 22% compared to newsstand",
+            url: "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=DI1&prom=MMMXS20F"
+        }
+    }
 };

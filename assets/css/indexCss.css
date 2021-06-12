@@ -1,0 +1,47 @@
+.text-grey {
+  color: #969696;
+}
+
+.text-gold {
+  color: #b59150;
+}
+
+.christmas-logo {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #b59150;
+  border-color: #b59150;
+}
+
+.btn-primary:hover {
+  background-color: #96773f;
+  border-color: #96773f;
+}
+
+.border-xmas {
+  display: block;
+  position: relative;
+  padding: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%) 10 round;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+/* @media  (max-width: 991px) { */
+.border-xmas {
+  background: url('assets/images/christmas-bg-light.jpg') no-repeat;
+  background-color: #ffffff;
+  z-index: 10;
+  /* } */
+}
+
+.p-sm {
+  padding: 10px;
+}

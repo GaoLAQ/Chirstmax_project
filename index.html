@@ -9,61 +9,19 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
       <link rel="stylesheet" href="assets/css/style.css">
 
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSHFWV95LR"></script>
-       <script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSHFWV95LR"></script>
+      <script>
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
            gtag('js', new Date());
            gtag('config', 'G-GSHFWV95LR');
-       </script>
-
-      <style>
-         .text-grey {
-         color: #969696;
-         }
-         .text-gold {
-         color: #b59150;
-         }
-         .christmas-logo {
-         max-width: 400px;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         .btn-primary {
-         color: #fff;
-         background-color: #b59150;
-         border-color: #b59150;
-         } 
-         .btn-primary:hover {
-         background-color: #96773f;
-         border-color: #96773f;
-         } 	   
-         .border-xmas{
-         display: block;
-         position:relative;
-         padding: 20px;
-         border-width: 10px;
-         border-style: solid;
-         border-image: linear-gradient(135deg, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%) 10 round;
-         background-color: #ffffff;
-         z-index:10;
-         }
-         /* @media  (max-width: 991px) { */
-         .border-xmas{
-         background: url('assets/images/christmas-bg-light.jpg') no-repeat;
-         background-color: #ffffff;
-         z-index:10;
-         /* } */
-         } 
-         .p-sm{
-         padding:10px;
-         }
-      </style>
+      </script>
+      <link rel="stylesheet" href="assets/css/indexCss.css">
    </head>
    <body>
       <div class="wrapper m-md-4">
-         <div class="container border-xmas  p-sm ">
+         <div class="container border-xmas p-sm">
             <div class="text-center p-4">
                <img src="assets/images/christmas.svg" alt="Christmas Text" class="img-fluid center-block christmas-logo mt-5 mb-5 "/>
             </div>
@@ -77,12 +35,13 @@
               </div>
             </div>
 <!--            <p class="text-uppercase text-center mt-5 clearfix"><span class=" bg-secondary text-light p-3">Choose a title</span></p>-->
-          <div class="col-lg-10 offset-lg-1 mb-5">  <div class="row mt-5">
-               <div class="col-6 col-sm-6 col-md-3">
+         <div class="col-lg-10 offset-lg-1 mb-5">  
+            <div class="row mt-5" id="main">
+               <!-- <div class="col-6 col-sm-6 col-md-3">
                   <a href="store-page.html?brand=cheshire" class="btn btn-block btn-primary mt-3"><img src="assets/images/life-logos/cheshire-life.svg" alt="Logo" class="logo-svg-button"/>
                   </a> 
-               </div>
-               <div class="col-6 col-sm-6 col-md-3">
+               </div> -->
+               <!-- <div class="col-6 col-sm-6 col-md-3">
                   <a href="store-page.html?brand=cornwall" class="btn btn-block btn-primary mt-3"><img src="assets/images/life-logos/cornwall-life.svg" alt="Logo" class="logo-svg-button"/>
                   </a> 
                </div>
@@ -127,8 +86,7 @@
                </div>
                <div class="col-6 col-sm-6 col-md-3">
                   <a href="" class="btn btn-block btn-primary mt-3"><img src="assets/images/life-logos/yorkshire-life.svg" alt="Logo" class="logo-svg-button"/></a> 
-               </div>
-            </div>
+               </div> -->
             </div>
          </div>
          <div class="container p-4">
@@ -142,39 +100,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
       <script src="./assets/js/christmas-offers.js"></script>
       <script src="./assets/js/home.js"></script>
-      <script>
-         $(document).ready(function () {
-         		
-         	// any js to go here
-          
-            
-            function getQueryVariable(variable)
-            {
-               var query = window.location.search.substring(1);
-               var vars = query.split("&");
-               for (var i=0;i<vars.length;i++) {
-                  var pair = vars[i].split("=");
-                  if(pair[0] == variable){return pair[1];}
-               }
-               return(false);
-            }
-         if (getQueryVariable("brand")){
-         var BrandVar = getQueryVariable("brand");
-         console.log("querystring for brand is present:" + BrandVar );
-         
-         // cornwall life
-         if(BrandVar  =="cl"){
-         
-         $(".stencil-image").attr("src", "https://edition.pagesuite-professional.co.uk/get_image.aspx?w=250&pbid=0bfd7b03-d77e-496b-aca8-266d2160f6f2");
-         
-         
-         
-         		}	 
-         }	 
-         
-         });
-      </script>
-
-
+      <script src= "./assets/js/jqueryMangement_indexPage.js"></script>
    </body>
 </html>

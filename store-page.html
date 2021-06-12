@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <!--====== Title ======-->
+      <title>Bootstrap 4 template</title>
+      <meta name="description" content="This is a dummy page made from a template...">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Pre Connect --> 	
+      <link rel="preconnect" href="https://maps.gstatic.com">
+      <link rel="preconnect" href="https://maps.googleapis.com">
+      <!--Pre load assets --> 
+      <link rel="preload" href="assets/css/LineIcons.css" as="style">
+      <link rel="preload" href="assets/css/bootstrap.min.css" as="style">
+      <link rel="preload" href="assets/css/default.css" as="style">
+      <link rel="preload" href="assets/css/style.css" as="style">
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"  as="script">
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" as="script">
+      <link rel="preload" href="assets/js/jquery.easing.min.js" as="script">
+      <link rel="preload" href="assets/js/scrolling-nav.js" as="script">
+      <link rel="preload" href="assets/js/main.js" as="script">
+      <link rel="preload" href="assets/js/christmas-offers.js" as="script">
+      <link rel="preload" href="assets/js/offers.js" as="script">
+      <style>
+         .preloader{position:fixed;top:0;left:0;display:table;height:100%;width:100%;background:#fff;z-index:99999}.preloader .loader{display:table-cell;vertical-align:middle;text-align:center}.preloader .loader .ytp-spinner{position:absolute;left:50%;top:50%;width:64px;margin-left:-32px;z-index:18;pointer-events:none}.preloader .loader .ytp-spinner .ytp-spinner-container{pointer-events:none;position:absolute;width:100%;padding-bottom:100%;top:50%;left:50%;margin-top:-50%;margin-left:-50%;-webkit-animation:ytp-spinner-linspin 1.568s linear infinite;-moz-animation:ytp-spinner-linspin 1.568s linear infinite;-o-animation:ytp-spinner-linspin 1.568s linear infinite;animation:ytp-spinner-linspin 1.568s linear infinite}.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator{position:absolute;width:100%;height:100%;-webkit-animation:ytp-spinner-easespin 5332ms cubic-bezier(.4,0,.2,1) infinite both;-moz-animation:ytp-spinner-easespin 5332ms cubic-bezier(.4,0,.2,1) infinite both;-o-animation:ytp-spinner-easespin 5332ms cubic-bezier(.4,0,.2,1) infinite both;animation:ytp-spinner-easespin 5332ms cubic-bezier(.4,0,.2,1) infinite both}.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-left{position:absolute;top:0;left:0;bottom:0;overflow:hidden;right:50%}.preloader .loader .ytp-spinner .ytp-spinner-container .ytp-spinner-rotator .ytp-spinner-right{position:absolute;top:0;right:0;bottom:0;overflow:hidden;left:50%}.preloader .loader .ytp-spinner-circle{box-sizing:border-box;position:absolute;width:200%;height:100%;border-style:solid;border-color:#0067f4 #0067f4 #e9ecef;border-radius:50%;border-width:6px}.preloader .loader .ytp-spinner-left .ytp-spinner-circle{left:0;right:-100%;border-right-color:#e9ecef;-webkit-animation:ytp-spinner-left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;-moz-animation:ytp-spinner-left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;-o-animation:ytp-spinner-left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;animation:ytp-spinner-left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both}.preloader .loader .ytp-spinner-right .ytp-spinner-circle{left:-100%;right:0;border-left-color:#e9ecef;-webkit-animation:ytp-right-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;-moz-animation:ytp-right-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;-o-animation:ytp-right-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;animation:ytp-right-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both}@-webkit-keyframes ytp-spinner-linspin{to{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes ytp-spinner-linspin{to{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes ytp-spinner-easespin{12.5%{-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-o-transform:rotate(135deg);transform:rotate(135deg)}25%{-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg)}37.5%{-webkit-transform:rotate(405deg);-moz-transform:rotate(405deg);-ms-transform:rotate(405deg);-o-transform:rotate(405deg);transform:rotate(405deg)}50%{-webkit-transform:rotate(540deg);-moz-transform:rotate(540deg);-ms-transform:rotate(540deg);-o-transform:rotate(540deg);transform:rotate(540deg)}62.5%{-webkit-transform:rotate(675deg);-moz-transform:rotate(675deg);-ms-transform:rotate(675deg);-o-transform:rotate(675deg);transform:rotate(675deg)}75%{-webkit-transform:rotate(810deg);-moz-transform:rotate(810deg);-ms-transform:rotate(810deg);-o-transform:rotate(810deg);transform:rotate(810deg)}87.5%{-webkit-transform:rotate(945deg);-moz-transform:rotate(945deg);-ms-transform:rotate(945deg);-o-transform:rotate(945deg);transform:rotate(945deg)}to{-webkit-transform:rotate(1080deg);-moz-transform:rotate(1080deg);-ms-transform:rotate(1080deg);-o-transform:rotate(1080deg);transform:rotate(1080deg)}}@keyframes ytp-spinner-easespin{12.5%{-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-o-transform:rotate(135deg);transform:rotate(135deg)}25%{-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg)}37.5%{-webkit-transform:rotate(405deg);-moz-transform:rotate(405deg);-ms-transform:rotate(405deg);-o-transform:rotate(405deg);transform:rotate(405deg)}50%{-webkit-transform:rotate(540deg);-moz-transform:rotate(540deg);-ms-transform:rotate(540deg);-o-transform:rotate(540deg);transform:rotate(540deg)}62.5%{-webkit-transform:rotate(675deg);-moz-transform:rotate(675deg);-ms-transform:rotate(675deg);-o-transform:rotate(675deg);transform:rotate(675deg)}75%{-webkit-transform:rotate(810deg);-moz-transform:rotate(810deg);-ms-transform:rotate(810deg);-o-transform:rotate(810deg);transform:rotate(810deg)}87.5%{-webkit-transform:rotate(945deg);-moz-transform:rotate(945deg);-ms-transform:rotate(945deg);-o-transform:rotate(945deg);transform:rotate(945deg)}to{-webkit-transform:rotate(1080deg);-moz-transform:rotate(1080deg);-ms-transform:rotate(1080deg);-o-transform:rotate(1080deg);transform:rotate(1080deg)}}@-webkit-keyframes ytp-spinner-left-spin{0%{-webkit-transform:rotate(130deg);-moz-transform:rotate(130deg);-ms-transform:rotate(130deg);-o-transform:rotate(130deg);transform:rotate(130deg)}50%{-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-ms-transform:rotate(-5deg);-o-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(130deg);-moz-transform:rotate(130deg);-ms-transform:rotate(130deg);-o-transform:rotate(130deg);transform:rotate(130deg)}}@keyframes ytp-spinner-left-spin{0%{-webkit-transform:rotate(130deg);-moz-transform:rotate(130deg);-ms-transform:rotate(130deg);-o-transform:rotate(130deg);transform:rotate(130deg)}50%{-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-ms-transform:rotate(-5deg);-o-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(130deg);-moz-transform:rotate(130deg);-ms-transform:rotate(130deg);-o-transform:rotate(130deg);transform:rotate(130deg)}}@-webkit-keyframes ytp-right-spin{0%{-webkit-transform:rotate(-130deg);-moz-transform:rotate(-130deg);-ms-transform:rotate(-130deg);-o-transform:rotate(-130deg);transform:rotate(-130deg)}50%{-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-ms-transform:rotate(5deg);-o-transform:rotate(5deg);transform:rotate(5deg)}to{-webkit-transform:rotate(-130deg);-moz-transform:rotate(-130deg);-ms-transform:rotate(-130deg);-o-transform:rotate(-130deg);transform:rotate(-130deg)}}@keyframes ytp-right-spin{0%{-webkit-transform:rotate(-130deg);-moz-transform:rotate(-130deg);-ms-transform:rotate(-130deg);-o-transform:rotate(-130deg);transform:rotate(-130deg)}50%{-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-ms-transform:rotate(5deg);-o-transform:rotate(5deg);transform:rotate(5deg)}to{-webkit-transform:rotate(-130deg);-moz-transform:rotate(-130deg);-ms-transform:rotate(-130deg);-o-transform:rotate(-130deg);transform:rotate(-130deg)}}
+      </style>
+   </head>
+   <body>
+      <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+      <!--====== PRELOADER PART START ======-->
+      <div class="preloader">
+         <div class="loader">
+            <div class="ytp-spinner">
+               <div class="ytp-spinner-container">
+                  <div class="ytp-spinner-rotator">
+                     <div class="ytp-spinner-left">
+                        <div class="ytp-spinner-circle"></div>
+                     </div>
+                     <div class="ytp-spinner-right">
+                        <div class="ytp-spinner-circle"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--====== PRELOADER PART ENDS ======-->
+
+      <!--====== PRODUCTS PART START ======-->
+      <section> <!-- removed:  class="features-area" -->
+         <div class="container">
+            <div class="creative mb-5">
+               <div class="text-center p-4">
+                  <img src="assets/images/christmas.svg" alt="Christmas Text" class="img-fluid center-block christmas-logo mt-5 mb-3 "/>
+               </div>
+               <div class="row">
+
+                  <div class="col-12 col-lg-10 col-md-12 offset-lg-1 ">
+                     <p class="text-uppercase text-grey h3 text-center">Gift Subscriptions</p>
+                     <p class="h4 text-center  ">Choose a subscription that you want to gift.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- row -->
+            <div class="subscribe-page row clearfix card-group">
+               <!-- Begin col-md-4, Print -->
+               <div class="col-lg-4 col-md-12 order-lg-2 col-sm-12 col-xs-12 mb-20 card-container">
+                  <div class="card card-default card-featured w-100">
+                     <div class="card-header text-center best-value"> Best Value </div>
+                     <div class="card-body">
+                        <p class="card-title text-center package-title">Print &amp Digital</p>
+                        <p class="card-text text-center package-type">Printed monthly magazine with E-Edition</p>
+                        <p class="card-text text-center package-deal pad-package-deal"></p>
+                        <a href="" target="_blank" class="btn btn-primary btn-block btn-subscribe pad-btn" rel="noopener">Subscribe Now</a>
+                        <div class="included-container">
+                           <p class="card-text">What's included</p>
+                           <ul class="included-list pad-points">
+                              <li class="pad-saving-text"></li>
+                              <li>Free UK delivery</li>
+                              <li>Digital edition</li>
+                              <li>Available on mobile and web</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 order-lg-1 col-sm-12 col-xs-12 mb-20 card-container">
+                  <div class="card card-default card-standard w-100">
+
+                     <div class="card-body">
+                        <p class="card-title text-center package-title">Digital</p>
+                        <p class="card-text text-center package-type">Monthly E-Edition</p>
+                        <p class="card-text text-center package-deal digital-package-deal"></p>
+                        <a href="#" target="_blank" class="btn btn-primary btn-block btn-subscribe digital-btn" rel="noopener">Subscribe Now</a>
+                        <div class="included-container">
+                           <p class="card-text">What's included</p>
+                           <ul class="included-list digital-points">
+
+                              <li>Digital edition</li>
+                              <li>Available on mobile and web</li>
+
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-6 order-lg-3 col-sm-12 col-xs-12 mb-20 card-container">
+                  <div class="card card-default card-standard w-100">
+
+                     <div class="card-body">
+                        <p class="card-title text-center package-title">Print</p>
+                        <p class="card-text text-center package-type">Printed monthly magazine</p>
+                        <p class="card-text text-center package-deal print-package-deal"></p>
+                        <a href="#" target="_blank" class="btn btn-primary btn-block btn-subscribe print-btn" rel="noopener">Subscribe Now</a>
+                        <div class="included-container">
+                           <p class="card-text">What's included</p>
+                           <ul class="included-list print-points">
+                              <li class="print-saving-text"></li>
+                              <li>Free UK delivery</li>
+                              <li>Printed gift card included</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- row -->
+         </div>
+         <!-- container -->
+      </section>
+      <!--====== PRODUCTS PART ENDS ======-->
+
+
+      <!--====== PART START ======-->
+      <!--
+         <section class="">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-">
+                         
+                     </div>
+                 </div>
+             </div>
+         </section>
+         -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+      <link rel="stylesheet" href="assets/css/LineIcons.css">
+      <link rel="stylesheet" href="assets/css/default.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!--====== js ======-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.min.js" defer></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.plugins.min.js" defer></script>
+      <script src="assets/js/jquery.easing.min.js" defer></script>
+      <script src="assets/js/scrolling-nav.js" defer></script>
+      <script src="assets/js/main.js" defer></script>
+
+      <!-- Add by Hannah -->
+      <script src="assets/js/christmas-offers.js"></script>
+      <script src="assets/js/offers.js"></script>
+
+      <script>
+
+         (function(src) {
+            var a = document.createElement("script");
+            a.type = "text/javascript";
+            a.async = true;
+            a.src = src;
+            var b = document.getElementsByTagName("script")[0];
+            b.parentNode.insertBefore(a, b)
+         })("//sandbox.tinypass.com/xbuilder/experience/load?aid=1h4cjpLgsu");
+
+
+
+         $(document).ready(function () {
+         		
+         		
+         				$(function() {
+         					$('.lazy').Lazy();
+         				});
+         
+         				// here for loading fonts in a non render blocking manner / speed hack
+          
+         		
+         				 function addGoogleFont(FontName) {
+         				 $("head").append("<link href='https://fonts.googleapis.com/css?family=" + FontName + "' rel='stylesheet' type='text/css'>");
+         				 }
+         
+         
+         				 addGoogleFont("PT+Serif:wght@400;700&display=swap"); // PT Serif	 
+         
+         // code from gav
+           (function(src) {
+                 var a = document.createElement("script");
+                 a.type = "text/javascript";
+                 a.async = true;
+                 a.src = src;
+                 var b = document.getElementsByTagName("script")[0];
+                 b.parentNode.insertBefore(a, b)
+             })("//sandbox.tinypass.com/xbuilder/experience/load?aid=1h4cjpLgsu");
+            //===== Sticky
+         
+            $(window).on('scroll', function (event) {
+               var scroll = $(window).scrollTop();
+               if (scroll < 20) {
+                  $(".navbar-area").removeClass("sticky");
+                  $(".navbar-area img").attr("src", "assets/images/COTSWOLD-LIFE.svg");
+               } else {
+                  $(".navbar-area").addClass("sticky");
+                  $(".navbar-area img").attr("src", "assets/images/COTSWOLD-LIFE-v2.svg");
+               }
+            });
+         
+            function getQueryVariable(variable)
+            {
+               var query = window.location.search.substring(1);
+               var vars = query.split("&");
+               for (var i=0;i<vars.length;i++) {
+                  var pair = vars[i].split("=");
+                  if(pair[0] == variable){return pair[1];}
+               }
+               return(false);
+            }
+         if (getQueryVariable("offercode")){
+         var OfferCode = getQueryVariable("offercode");
+         console.log("querystring for OfferCode is present:" + OfferCode);
+         
+         
+         // EMAIL
+         if(OfferCode =="email"){
+         
+         $("a.print-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTL&prom=GCTLPO2A");
+            	$("a.print-digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTLCD1&prom=GCTLPD2C");
+            	$("a.digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CD1&prom=GCTLDO2B");
+         }
+         // PPC
+         if(OfferCode =="ppc"){
+         
+         $("a.print-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTL&prom=6CTLPO2A");
+            	$("a.print-digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTLCD1&prom=6CTLPD2C");
+            	$("a.digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CD1&prom=6CTLDO2B");
+         }
+         // SOCIAL MEDIA
+         if(OfferCode =="socialmedia"){
+         
+         $("a.print-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTL&prom=XCTLPO2A");
+            	$("a.print-digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTLCD1&prom=XCTLPD2C");
+            	$("a.digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CD1&prom=XCTLDO2B");
+         }
+         // BRANDWEB
+         if(OfferCode =="socialmedia"){
+         
+         $("a.print-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTL&prom=MCTLPO2A");
+            	$("a.print-digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CTLCD1&prom=MCTLPD2C");
+            	$("a.digital-link").attr("href", "https://www.subscription.co.uk/archant/checkout/SingleItem?publ=ARCH&pubc=CD1&prom=MCTLDO2B");
+         }	
+         
+         }
+         
+         var myVar = setInterval(myTimer, 2000);
+         
+         function myTimer() {
+         $( ".preloader" ).remove();
+         
+         }
+         
+         
+         
+         
+         });
+      </script>  
+      <style>
+
+         .subscribe-page {
+            align-items: stretch;
+         }
+
+         .h-85 {
+            height: 85%;
+         }
+
+         .card-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .card-standard {
+            height: 100%;
+         }
+         @media (min-width: 992px) {
+            .card-standard {
+               height: 85%;
+            }
+         }
+
+         .card-standard {
+            border: none;
+            box-shadow: 0px 1px 6px 1px #eee;
+         }
+
+         .card-featured {
+            border: 2px solid #b59150;
+         }
+
+         .subscribe-page p {
+            margin-bottom: 1em;
+         }
+
+         .best-value {
+            text-transform: uppercase;
+            color: white;
+            background-color: #b59150;
+         }
+
+         .package-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.3em;
+         }
+
+         .btn-subscribe {
+            background-color: #b59150;
+            border-color: #b59150;
+            color: white;
+            text-transform: uppercase;
+            width: 80%;
+            max-width: 350px;
+            margin: 1em auto;
+         }
+
+         .btn-subscribe:hover {
+            background-color: #96773f;
+            border-color: #96773f;
+         }
+
+         .included-container {
+            position: relative;
+            padding-top: 1em;
+         }
+
+         .included-container::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 90%;
+            top: 0;
+            left: 5%;
+            background-color: #eee;
+         }
+
+         .included-list {
+            list-style-type: none;
+            position: relative;
+         }
+
+         .included-list li::before {
+            content: "✓";
+            font-weight: bold;
+            position: absolute;
+            color: #b59150;
+            left: 0;
+         }
+
+         .included-list li {
+            padding-left: 1.5em;
+            line-height: 1.8em;
+         }
+
+
+         .text-grey {
+            color: #969696;
+         }
+         .text-gold {
+            color: #b59150;
+         }
+
+         .christmas-logo {
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+
+
+
+
+
+
+         .subscribe-page li {
+         /*list-style-type: none;*/
+         }
+         .subscribe-page ul {
+         /*margin: 0;*/
+         /*padding: 0;*/
+         /*margin-left: 15px;*/
+         /*margin-right: 15px;*/
+         }
+         .cross,
+         .no_tick,
+         .tick {
+         padding: 0 0 0 15px;
+         }
+         .terms_conditions p {
+         font-size: 10px;
+         text-align: center;
+         }
+         .tick {
+         background: url(https://www.essexlifemag.co.uk/polopoly_fs/7.728239.1593516324!/check_green_small.png) no-repeat;
+         /*content: "✓";*/
+         background-size: 10px;
+         background-position-x: 1px;
+         background-position-y: 5px;
+         }
+         .cross {
+         background: url(https://www.essexlifemag.co.uk/polopoly_fs/7.728239.1593516324!/x_red_small.png) no-repeat;
+         background-size: 10px;
+         background-position-x: 1px;
+         background-position-y: 5px;
+         }
+
+
+
+
+
+
+
+         .no_tick {
+         font-size: 13px;
+         }
+         .m-b-20 {
+         margin-bottom: 20px;
+         }
+         .m-t-20 {
+         margin-top: 20px;
+         }
+         .print-image {
+         display: unset;
+         }
+         .print-digital {
+         padding: 20px;
+         }
+         .digital-only {
+         padding: 20px;
+         }
+         .print-digital-box {
+         background-image: url(https://www.essexlifemag.co.uk/polopoly_fs/7.728239.1593516324!/ipad.png);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         max-width: 150px;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         -ms-transform: rotate(6deg);
+         transform: rotate(6deg);
+         }
+         .print-digital-panel {
+         position: relative;
+         }
+         .digital-box {
+         float: none;
+         clear: both;
+         margin-left: auto;
+         margin-right: auto;
+         background-image: url(https://www.essexlifemag.co.uk/polopoly_fs/7.728239.1593516324!/ipad.png);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         width: 250px;
+         }
+         .print-digital-panel {
+         position: relative;
+         }
+         @media (min-width: 1000px) {
+         ul.desktop-margin {
+         margin-top: 45px;
+         }
+         .desktop-full-height {
+         height: 100vh;
+         }
+         }
+         .btn-danger,
+         .btn-danger:visited {
+         color: #fff;
+         background-color: #e0a800;
+         border-color: #7cbbe6;
+         }
+         .btn-danger:hover {
+         color: #fff;
+         background-color: #c69500;
+         border-color: #c69500;
+         }
+         .text-white {
+         color: #fff !important;
+         }
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6 {
+         font-family: "PT Serif", Georgia, serif;
+         font-weight: 600;
+         color: #121212;
+         margin: 0;
+         }
+         .slider-content h3 {
+         font-size: 56px;
+         }
+         .Aligner {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         @media (max-width:800px) {
+         .slider-content {
+         padding-top: 110px;
+         text-align: center;
+         }
+         .slider-content .h1
+         {
+         font-size: 33px;
+         } 
+         }
+         @media (min-width:800px) {
+         .Aligner-item {
+         max-width: 50%;
+         }
+         }
+         .team-style-eleven .team-content::before {
+         position: absolute;
+         content: "";
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         background: -webkit-linear-gradient(left, #c7c7c7 0, #bbb 100%);
+         background: -o-linear-gradient(left, #c7c7c7 0, #bbb 100%);
+         background: linear-gradient(to right, #c7c7c7 0, #bbb 100%);
+         z-index: -1;
+         -webkit-transition: all 0.3s ease-out 0s;
+         -moz-transition: all 0.3s ease-out 0s;
+         -ms-transition: all 0.3s ease-out 0s;
+         -o-transition: all 0.3s ease-out 0s;
+         transition: all 0.3s ease-out 0s;
+         opacity: 0;
+         }
+         span.social {
+         display: none !important;
+         }
+         .badge.badge-primary{
+         background-color: #dcb24e;
+         }
+      </style>
+   </body>
+</html>

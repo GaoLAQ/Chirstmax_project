@@ -29,19 +29,22 @@
   padding: 20px;
   border-width: 10px;
   border-style: solid;
-  border-image: linear-gradient(135deg, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%) 10 round;
+  border-image: linear-gradient(
+      135deg,
+      #f3e2c7 0%,
+      #c19e67 50%,
+      #b68d4c 51%,
+      #e9d4b3 100%
+    )
+    10 round;
   background-color: #ffffff;
   z-index: 10;
 }
-
-/* @media  (max-width: 991px) { */
 .border-xmas {
-  background: url('assets/images/christmas-bg-light.jpg') no-repeat;
+  background: url("../../assets/images/christmas-bg-light.jpg") no-repeat;
   background-color: #ffffff;
   z-index: 10;
-  /* } */
 }
-
 .p-sm {
   padding: 10px;
 }

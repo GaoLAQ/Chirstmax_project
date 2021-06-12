@@ -2,7 +2,7 @@ let christmasTandCs = "T&Cs: *Saving compares to buying full-priced issues from 
 
 let ChristmasAdditionalPoints = {
         "digital": [],
-        "printAndDigital": ["Printed gift card included"],
+        "printAndDigital": ["Printed Christmas card included"],
         "print": []
 };
 

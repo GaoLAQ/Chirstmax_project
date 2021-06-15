@@ -5,6 +5,7 @@ let tAndC;
 
 console.log(offers);
 console.log(additionalPoints);
+console.log("offer render first")
 
 
 // Add any additional common bullet points
@@ -27,26 +28,26 @@ if(additionalPoints.print !== [])
 // Gets the "brand=foobar" query string parameter
 let queryString = new URLSearchParams(window.location.search);
 if (queryString.get('brand')){
-
+    console.log("get brand successfully")
     // Use jQuery to get the elements and amend text and URLs in the cards
     let thisBrand = queryString.get('brand');
     console.log("App: Brand is " + thisBrand);
     let thisOffer = offers[thisBrand];
     console.log(offers[thisBrand]);
-
-    $('.digital-package-deal').text(thisOffer.digital.pricePointText);
-    $('.digital-btn').attr("href", thisOffer.digital.url);
-
-    $('.pad-package-deal').text(thisOffer.printAndDigital.pricePointText);
-    $('.pad-saving-text').text(thisOffer.printAndDigital.savingText);
-    $('.pad-btn').attr("href", thisOffer.printAndDigital.url);
-
-    $('.print-package-deal').text(thisOffer.print.pricePointText);
-    $('.print-saving-text').text(thisOffer.print.savingText);
-    $('.print-btn').attr("href", thisOffer.print.url);
-
+    // console.log(thisOffer.digital.pricePointText);
+    $(document).ready(function () {
+        $('.digital-package-deal').text(thisOffer.digital.pricePointText);
+        $('.digital-btn').attr("href", thisOffer.digital.url);
+        $('.pad-package-deal').text(thisOffer.printAndDigital.pricePointText);
+        // $('.pad-saving-text').text(thisOffer.printAndDigital.savingText);
+        $('.pad-btn').attr("href", thisOffer.printAndDigital.url);
+        $('.print-package-deal').text(thisOffer.print.pricePointText);
+        // $('.print-saving-text').text(thisOffer.print.savingText);
+        $('.print-btn').attr("href", thisOffer.print.url);
+    })
     $('.christmas-logo').attr("src", "assets/images/life-logos/"+thisBrand+"-life-gold.svg");
 } else {
     // The URL has "brand=something", handle error gracefully with a console log
+    console.log(" we cannot get brand from query string")
 }
-
+  

@@ -1,4 +1,5 @@
 (function (src) {
+  console.log("scriptGenerator render first")
   var a = document.createElement("script");
   a.type = "text/javascript";
   a.async = true;
@@ -12,8 +13,12 @@ $(document).ready(function () {
     $(".lazy").Lazy();
   });
 
-  // GenerateHTML
+  // GenerateHTML for "Card options in store-html" 
+  // Print & Digital: pad-package-deal
+  // Digital: digital-package-deal
+  // Print: print-package-deal
   indexCardOffers.forEach(function (child) {
+    console.log(christmasOffers)
     $(`${child.target}`).append(
       `<div class="card card-default card-${child.type} w-100" id='bestValue'>
           <div class="card-body">
@@ -21,7 +26,7 @@ $(document).ready(function () {
           <p class="card-text text-center package-type">
             ${child.cardText}
           </p>
-          <p class="card-text text-center package-deal pad-package-deal"></p>
+          <p class="card-text text-center package-deal ${child.deal}-package-deal" id='${child.deal}'></p>
           <a
             href=""
             target="_blank"

@@ -100,9 +100,9 @@ Gav
 4. What do you notice about the query strings and how they interact with the page?<br>
    **Solution:**
    <br>
-   Firstly, we use href = "store-page.html?brand=" + child.queryKeyName.toString()" from a tag, quey Strings are generated, for instance, we got store-page.html?brand="cheshire". I found query parameters we need to get from query strings "brand=cheshire", we need get value "cheshire" from query string.
+   Firstly, we use href = "store-page.html?brand=" + child.queryKeyName.toString()" from a tag to generate query string. For instance, we got store-page.html?brand="cheshire". we need to find query parameters from query strings like "brand=cheshire", we need get value "cheshire" from query string.
    In index.html and store.html, we use getQueryVariable function to get query parameter.
-   in offers.js, we use URLSearchParams and get method, gets the "brand=foobar" query string parameter, we use "foobar" value to call json data "thisoffer" from christmas-offer.js.
+   in offers.js, we use URLSearchParams and get method, gets the "brand=foobar" query string parameter, we use "foobar" value to call json data from christmas-offer.js.
 
 ## Add Derbyshire Life store page
 

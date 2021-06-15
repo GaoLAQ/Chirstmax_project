@@ -45,7 +45,7 @@ if (queryString.get('brand')){
     $('.print-saving-text').text(thisOffer.print.savingText);
     $('.print-btn').attr("href", thisOffer.print.url);
 
-    $('.christmas-logo').attr("src", "assets/images/life-logos/"+thisBrand+"-life.svg");
+    $('.christmas-logo').attr("src", "assets/images/life-logos/"+thisBrand+"-life-gold.svg");
 } else {
     // The URL has "brand=something", handle error gracefully with a console log
 }

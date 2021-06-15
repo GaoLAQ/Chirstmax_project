@@ -84,7 +84,7 @@ $(document).ready(function () {
         queryKeyName: "yorkshire",
       },
     ];
-    indexOffers.forEach(function (child) {
+    indexOffers.forEach(function(child) {
       var list = $("#main").append(
         $("<div></div>")
           .attr({

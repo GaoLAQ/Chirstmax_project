@@ -12,44 +12,6 @@ $(document).ready(function () {
     $(".lazy").Lazy();
   });
 
-  // Add repeated html
-  // GenerateJson
-  const indexCardOffers = [
-    {
-      target: "#print_digital",
-      subTarget: "sub_print_digital",
-      title: "Print &amp Digital",
-      cardText: "Printed monthly magazine with E-Edition",
-      type: "featured",
-      items: [
-        { subitem: "Free UK delivery" },
-        { subitem: "Digital edition" },
-        { subitem: "Available on mobile and web" },
-      ],
-    },
-    {
-      target: "#print",
-      subTarget: "sub_print",
-      title: "Print",
-      cardText: "Printed monthly magazine with E-Edition",
-      type: "standard",
-      items: [
-        { subitem: "Free UK delivery" },
-        { subitem: "Printed gift card included" },
-      ],
-    },
-    {
-      target: "#digital",
-      subTarget: "sub_digital",
-      title: "Digital",
-      cardText: "Monthly E-Edition",
-      type: "standard",
-      items: [
-        { subitem: "Digital edition" },
-        { subitem: "Available on mobile and web" },
-      ],
-    },
-  ];
   // GenerateHTML
   indexCardOffers.forEach(function (child) {
     $(`${child.target}`).append(
